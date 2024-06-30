@@ -1,0 +1,73 @@
+[class^="MessageBase__MessageContent-sc-"] {
+	background-color: var(--message-box);
+	border-radius: 10px;
+	padding: 10px 15px 10px 15px;
+        border-top-left-radius: 3.5px;
+        border-bottom-left-radius: 3.5px;
+        flex-grow: 0;
+        position: relative;
+}
+[class^="MessageBase__MessageContent-sc-"]:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 3.2em;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right-color: var(--message-box);
+	border-left: 0;
+	margin-top: -38px;
+	margin-left: -10px;
+}
+
+
+.gloPof::before {
+display: none;
+}
+
+div[class^="_profile_"] {
+border: var(--primary-background) 5px solid;
+border-radius: 25px;
+transform: scale(.85, .85) translate(-1.5em, .1em);
+background: var(--primary-background);
+}
+
+div[class^="_tabs_"] div {
+border: var(--primary-background) 5px solid;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+background-color: var(--primary-background);
+filter: brightness(.9);
+transform: translate(0, 2px)
+}
+
+div[class^="_tabs_"] div[data-active] {
+border: var(--primary-background) 5px solid;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+background-color: var(--primary-background);
+transform: translate(0, 8px);
+filter: brightness(1);
+} 
+
+[data-item-index="0"] [class^="ItemContainer-sc-176t3v5-0"] foreignObject :is(div, img) 
+{ border-radius: 3px !important;}
+
+[class^="TypingIndicator__Base-sc-"] {
+display: none;
+}
+
+:root {
+	--border-radius-user-icon: 3px;
+}
+
+.emoji {
+	vertical-align: -0.3em;
+	object-fit: fill;
+	margin: 0px;
+}
+
+[class^="TypingIndicator__Base-sc-"] {
+display: none;
+}
