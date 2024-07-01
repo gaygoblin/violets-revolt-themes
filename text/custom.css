@@ -7,6 +7,7 @@
 :root {
     font-variant-ligatures:normal!important;
     --font: var(--monospace-font) !important;
+   font-size: 17px
 }
 
 
@@ -21,7 +22,8 @@
     padding-top: 0rem;
     margin-bottom: 0px;
     margin-top: 0px;
-    width: 10px
+    width: 10px;
+    font-size: 1px
 }
 .time {
     font-size: 10px;
@@ -76,14 +78,14 @@
      background: var(--primary-background);
    
 }
-.edited {
-    display: none;
+.csvICB .edited {
+    font-size: 0px
 }
 .jCxwsP {
     margin-top: 3px;
 }
 .gRLOyd {
-    padding: 2px; 
+    padding: 2px;
     margin-bottom: 0px; 
 }
 [class^="SidebarBase"] {
@@ -115,3 +117,4 @@
 a, a:link, a:visited, a:hover {
    color: var(--secondary-foreground);
 }   
+ 
