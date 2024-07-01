@@ -1,0 +1,114 @@
+
+/* change the default font */
+@font-face {
+    font-family: Blank;
+    src: url("https://raw.githack.com/adobe-fonts/adobe-blank/master/AdobeBlank.ttf.woff?raw=true");
+}
+:root {
+    font-variant-ligatures:normal!important;
+    --font: var(--monospace-font) !important;
+}
+
+
+/* pfp killer */
+.bTjVNf {
+    display: none;
+}
+
+/* message area stuffs */
+[class^=MessageBase__MessageInfo] {
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 10px
+}
+.time {
+    font-size: 10px;
+}
+[class^="MessageArea__Area"] {
+    border: 2px var(--accent) solid;
+    margin: .5rem;
+    margin-top: 2.4rem;
+    transform: translate(0px, -1rem);
+    
+}
+[class^="Header"] {
+    background: none;
+    backdrop-filter: none;
+    padding-top: 0px;
+}
+[class^="TypingIndicator"], [class^="desc"] {
+    display: none;
+}
+[class^="name"], [class^="StyledIconBase"] {
+    background: var(--primary-background);
+    border: .25rem var(--primary-background) solid;
+    color: var(--primary-foreground);
+    border-radius: 5px;
+    font-size: 17px;
+}
+[class^="FallbackBase"] {
+    background: var(--primary-background);
+}
+/* name stuff */
+[class^=MessageBase__MessageContent]>.detail>.author::before {
+    content: '> '
+}
+/* time flourish */
+[class^=MessageBase__]>time::before {
+    content: '['
+}
+[class^=MessageBase__]>time::after {
+    content: ']'
+}
+[class^=MessageBase__]>time {
+    color: var(--secondary-foreground)
+}
+/* fix height issues */
+[class^=MessageBase__MessageContent] {
+    height: fit-content
+}
+[class^=MessageBase] {
+    padding-top: 2px;
+}
+[class^="ItemContainer"] {
+     background: var(--primary-background);
+   
+}
+.edited {
+    display: none;
+}
+.jCxwsP {
+    margin-top: 3px;
+}
+.gRLOyd {
+    padding: 2px; 
+    margin-bottom: 0px; 
+}
+[class^="SidebarBase"] {
+    border: 2px var(--accent) solid;
+    margin: .5rem;
+    margin-top: 1.4rem;
+    height: 93%
+}
+[class^="Titlebar__TitlebarBase"] {
+    border: 2px var(--accent) solid;
+    margin: .5rem;
+}
+.gILwrq > div, .csvICB time {
+    display: none;
+}
+.jBEnry {
+    transform: translate(0px, -20px);
+    border: 2px var(--accent) solid;
+    margin: .5rem;
+}
+[class^="divider"] {
+   display: none;
+}
+
+a, a:link, a:visited, a:hover {
+   color: var(--secondary-foreground);
+   
+}
