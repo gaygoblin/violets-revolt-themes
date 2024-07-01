@@ -96,6 +96,10 @@
     border: 2px var(--accent) solid;
     margin: .5rem;
 }
+.jtuvHh {
+    position: relative;
+    top: -20px
+}
 .gILwrq > div, .csvICB time {
     display: none;
 }
@@ -110,5 +114,4 @@
 
 a, a:link, a:visited, a:hover {
    color: var(--secondary-foreground);
-   
-}
+}   
