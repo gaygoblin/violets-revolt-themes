@@ -1,4 +1,5 @@
 
+
 /* change the default font */
 @font-face {
     font-family: Blank;
@@ -7,9 +8,11 @@
 :root {
     font-variant-ligatures:normal!important;
     --font: var(--monospace-font) !important;
-   font-size: 17px
 }
-
+/* hide homescreen bs */
+[class^="_home_"] [class^="_homeScreen_"] [class^="_actions_"] {
+  display: none;
+}
 
 /* pfp killer */
 .bTjVNf {
@@ -22,42 +25,57 @@
     padding-top: 0rem;
     margin-bottom: 0px;
     margin-top: 0px;
-    width: 10px;
-    font-size: 1px
+    width: 10px
 }
+
 .time {
     font-size: 10px;
 }
+/* message area border */
 [class^="MessageArea__Area"] {
     border: 2px var(--accent) solid;
     margin: .5rem;
     margin-top: 2.4rem;
     transform: translate(0px, -1rem);
-    
 }
+
+[class^="name"], [class^="StyledIconBase"] {
+    background: var(--primary-background);
+    border: .1rem var(--primary-background) solid;
+    color: var(--accent);
+    border-radius: 0;
+    font-size: 17px;
+    text-transform: lowercase;
+}
+/* mass of hover */
+[class^="MessageArea__Area"]:hover, [class^="SidebarBase"]:hover,
+[class^="MessageBox"]:hover
+[class^="list"]:hover {
+    border-color: #98bb6c !important;
+}
+/* header killer */
 [class^="Header"] {
     background: none;
     backdrop-filter: none;
     padding-top: 0px;
 }
-[class^="TypingIndicator"], [class^="desc"] {
-    display: none;
+/* desc and typing indec. killer */
+[class^="TypingIndicator"] {
+    display: none important;
 }
-[class^="name"], [class^="StyledIconBase"] {
-    background: var(--primary-background);
-    border: .25rem var(--primary-background) solid;
-    color: var(--primary-foreground);
-    border-radius: 5px;
-    font-size: 17px;
+.cnyIwU .desc {
+    display: none !important;
 }
+/* i cant remember what this does lmao */
 [class^="FallbackBase"] {
     background: var(--primary-background);
 }
 /* name stuff */
-[class^=MessageBase__MessageContent]>.detail>.author::before {
+[class^="MessageBase__MessageContent"]>.detail>.author::before {
     content: '> '
 }
-/* time flourish */
+
+/* time flourishes */
 [class^=MessageBase__]>time::before {
     content: '['
 }
@@ -74,18 +92,16 @@
 [class^=MessageBase] {
     padding-top: 2px;
 }
+
 [class^="ItemContainer"] {
      background: var(--primary-background);
    
-}
-.csvICB .edited {
-    font-size: 0px
 }
 .jCxwsP {
     margin-top: 3px;
 }
 .gRLOyd {
-    padding: 2px;
+    padding: 2px; 
     margin-bottom: 0px; 
 }
 [class^="SidebarBase"] {
@@ -94,17 +110,27 @@
     margin-top: 1.4rem;
     height: 93%
 }
+/* sidebar visual fixes */
+[class^="SidebarBase__GenericSidebarBase"] {
+    border: 0;
+padding: 4px 6px 0px 0px;
+}
+
+[class^="SidebarBase__GenericSidebarList"] {
+    border: 0;
+padding: 4px 6px 0px 0px;
+top: 0px
+}
+/* border stuff again */
 [class^="Titlebar__TitlebarBase"] {
     border: 2px var(--accent) solid;
     margin: .5rem;
 }
-.jtuvHh {
-    position: relative;
-    top: -20px
-}
-.gILwrq > div, .csvICB time {
+/* removes the (edited) and side text things (u dont wanna re-enable this it looks like shit with this theme) */
+.csvICB .edited, .csvICB time {
     display: none;
 }
+/* j benry */
 .jBEnry {
     transform: translate(0px, -20px);
     border: 2px var(--accent) solid;
@@ -113,8 +139,9 @@
 [class^="divider"] {
    display: none;
 }
-
+/* linkey stuffs */
 a, a:link, a:visited, a:hover {
    color: var(--secondary-foreground);
-}   
- 
+   
+}
+
